@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Website Design and Development Conference",
+        "image": "https://i.ibb.co/M665R34/web-development.jpg",
+        "price": "$999.99",
+        "short_description": "Professional website design and development.",
+        "long_description": "Professional website design and development. We create stunning and functional websites tailored to your business needs. Our team of experts uses the latest technologies to build responsive, user-friendly websites that enhance your online presence and drive results."
+    },
+    {
+        "id": 2,
+        "title": "Search Engine Optimization (SEO) Webinar",
+        "image": "https://i.ibb.co/xs3S07h/seo.jpg",
+        "price": "$499.99",
+        "short_description": "Boost your online visibility with SEO.",
+        "long_description": "Boost your online visibility with SEO. Our SEO services optimize your website for search engines, improving its ranking and driving organic traffic. We conduct in-depth keyword research, on-page and off-page optimization, and provide detailed analytics to ensure your website ranks higher and attracts more visitors."
+    },
+    {
+        "id": 3,
+        "title": "Social Media Marketing Seminar",
+        "image": "https://i.ibb.co/bP6JqJD/social-media.jpg",
+        "price": "$299.99",
+        "short_description": "Engage and expand your audience on social media.",
+        "long_description": "Engage and expand your audience on social media. Our social media marketing services help businesses connect with their target audience, increase brand awareness, and drive engagement. We create compelling content, manage ad campaigns, and analyze performance metrics to maximize your social media presence."
+    },
+    {
+        "id": 4,
+        "title": "E-commerce Website Development Conference",
+        "image": "https://i.ibb.co/H2dmWDd/e-Commerce.png",
+        "price": "$1299.99",
+        "short_description": "Create a seamless online shopping experience.",
+        "long_description": "Create a seamless online shopping experience. Our e-commerce website development services build robust, secure, and user-friendly online stores. From product listings to payment gateways, we handle every aspect of e-commerce development, ensuring your customers enjoy a smooth and secure shopping journey."
+    },
+    {
+        "id": 5,
+        "title": "Mobile App Development Activities",
+        "image": "https://i.ibb.co/L1Py1SG/become-mobile-app-developer.jpg",
+        "price": "$1499.99",
+        "short_description": "Turn your ideas into interactive mobile apps.",
+        "long_description": "Turn your ideas into interactive mobile apps. Our mobile app development services transform your concepts into feature-rich, user-friendly mobile applications. We specialize in iOS and Android app development, ensuring seamless performance, intuitive user interfaces, and robust functionality for your app users."
+    },
+    {
+        "id": 6,
+        "title": "Content Management System (CMS) Webinar Series",
+        "image": "https://i.ibb.co/R3MWP18/cms.png",
+        "price": "$399.99",
+        "short_description": "Effortless content management for your website.",
+        "long_description": "Effortless content management for your website. Our CMS setup services configure user-friendly content management systems like WordPress, Joomla, or Drupal for your website. Easily update content, add new pages, and manage multimedia elements without technical hassle. Streamline your website management with our CMS solutions."
+    }
+]
