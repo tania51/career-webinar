@@ -1,12 +1,12 @@
-import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import GalleryMain from "./GalleryMain";
 
 
 const Gallery = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <Footer></Footer>
+            <GalleryMain></GalleryMain>
         </div>
     );
 };
