@@ -7,12 +7,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAf7iEf_PbhOGSa57v9ElVDAKxkGArZgDE",
-  authDomain: "careers-fair.firebaseapp.com",
-  projectId: "careers-fair",
-  storageBucket: "careers-fair.appspot.com",
-  messagingSenderId: "646517391301",
-  appId: "1:646517391301:web:ec0d4bdd50e55b7ba655ac"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID
 };
 
 // Initialize Firebase
