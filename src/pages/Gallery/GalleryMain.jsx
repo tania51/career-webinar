@@ -13,47 +13,65 @@ const GalleryMain = () => {
         <div className="py-10 lg:py-20 px-10">
             <h2 className="text-3xl md:text-4xl font-bold text-center pb-14">Our Seminers, Conferences and Webinars</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar} />
                     </div>
                 </div>
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar2} />
                     </div>
                 </div>
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar3} />
                     </div>
                 </div>
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar4} />
                     </div>
                 </div>
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar5} />
                     </div>
                 </div>
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar6} />
                     </div>
                 </div>
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar7} />
                     </div>
                 </div>
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar8} />
                     </div>
                 </div>
-                <div className="avatar">
+                <div className="avatar" data-aos="zoom-in"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                     <div className="rounded-xl">
                         <img src={webinar9} />
                     </div>

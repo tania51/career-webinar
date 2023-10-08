@@ -51,7 +51,7 @@ const ContactMain = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-base-200 lg:pr-20 xl:pt-12 w-full lg:w-1/3 text-center lg:text-left">
+                <div className="bg-base-200 lg:pr-20 w-full lg:w-1/3 text-center lg:text-left">
                     <h2 className="text-3xl pb-5 lg:mr-3">Let's Talk</h2>
                     <hr className="w-32 mx-auto lg:mx-0 h-[2px] bg-yellow-600 mb-6" />
                     <h2 className="text-xl pb-3">Our Address</h2>
@@ -63,22 +63,7 @@ const ContactMain = () => {
                 </div>
             </div>
 
-            {/* google map */}
-            <div className="bg-[#0f0f0f]">
-                <div className="mx-auto pb-20" style={{ height: '450px', width: '80%' }}>
-                    <GoogleMapReact
-                        bootstrapURLKeys={{ key: "" }}
-                        defaultCenter={defaultProps.center}
-                        defaultZoom={defaultProps.zoom}
-                    >
-                        <AnyReactComponent
-                            lat={59.955413}
-                            lng={30.337844}
-                            text="My Marker"
-                        />
-                    </GoogleMapReact>
-                </div>
-            </div>
+            
         </div>
     );
 };

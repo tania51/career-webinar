@@ -6,7 +6,9 @@ const Job = ({ job }) => {
 
     return (
         <div>
-            <div className="card h-80 flex flex-row border-yellow-100 border-r border-b">
+            <div className="card h-80 flex flex-row border-yellow-100 border-r border-b" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                 <figure className="w-full"><img className="h-40 w-full rounded" src={image} alt="Album" /></figure>
                 <div className="card-body pr-3">
                     <h2 className="card-title text-xl">{title}</h2>

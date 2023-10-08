@@ -19,7 +19,9 @@ const BlogMain = () => {
             <div className="px-10 pt-0 lg:pt-14 pb-10">
                 <h2 className="text-4xl font-bold text-center pb-14">Welcome to Our Blog</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
@@ -29,7 +31,9 @@ const BlogMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog2} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
@@ -39,7 +43,9 @@ const BlogMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog3} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
@@ -49,7 +55,9 @@ const BlogMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog4} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
@@ -59,7 +67,9 @@ const BlogMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog5} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
@@ -69,7 +79,9 @@ const BlogMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog6} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
@@ -79,7 +91,9 @@ const BlogMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog8} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
@@ -89,7 +103,9 @@ const BlogMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog9} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
@@ -99,7 +115,9 @@ const BlogMain = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card shadow-xl border-r border-b border-yellow-400">
+                    <div className="card shadow-xl border-r border-b border-yellow-400" data-aos="fade-up"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500">
                         <figure><img className="h-52 w-full" src={blog10} alt="Lead Generation" /></figure>
                         <div className="card-body">
                             <p>Maciej Biegajewski | 21.08.2023</p>
