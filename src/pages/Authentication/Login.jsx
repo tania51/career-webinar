@@ -14,7 +14,10 @@ const Login = () => {
     const googleSignInHandeler = () => {
         console.log('google sign in works');
         signInWithGoogle()
-            .then(result => console.log(result.user))
+            .then(result => {
+                console.log(result.user)
+                navigate(location?.state ? location.state : '/')
+            })
             .catch(error => console.error(error))
     }
 
