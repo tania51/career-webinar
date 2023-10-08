@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const Register = () => {
@@ -10,8 +11,19 @@ const Register = () => {
 
     const googleSignInHandeler = () => {
         signInWithGoogle()
-            .then(result => console.log(result.user))
-            .catch(error => console.error(error))
+            .then(result => {
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: 'Successfully Logged In !!',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 
     const formHandeler = e => {
@@ -24,22 +36,42 @@ const Register = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(name, photo, email, password);
-        if(!/^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*\d)(?=\S*[^\w\s])\S{8,}$/.test(password)) {
-            alert("password should be at least 6 characters, one uppercase and one special character");
+
+        if (!/^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*\d)(?=\S*[^\w\s])\S{8,}$/.test(password)) {
+            Swal.fire({
+                text: 'Password should be at least 8 characters and at least one capital letter, one number and one special character',
+                color: 'red',
+                padding: '20px'
+            })
         }
         else {
-            createUser(email, password)
-            .then(result => console.log(result.user))
-            .catch(error => console.error(error))
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Account Created Successfully !!',
+                showConfirmButton: false,
+                timer: 1500
+            })
+
         }
-        
+
+        createUser(email, password)
+            .then(result => {
+
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.log(error);
+            })
+
     }
+
 
     return (
         <div>
             <Navbar></Navbar>
             <div className="hero min-h-[70vh] bg-base-200">
-                <div className="w-1/2 max-auto my-20">
+                <div className="lg:w-1/2 max-auto my-20">
                     <div className="card w-full shadow-2xl bg-base-100">
                         <form onSubmit={formHandeler} className="card-body">
                             <h2 className="text-3xl pb-3">Create Account</h2>

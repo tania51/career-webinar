@@ -8,24 +8,17 @@ import blog6 from "../../assets/blog/blog6.jpg"
 import blog8 from "../../assets/blog/blog8.jpg"
 import blog9 from "../../assets/blog/blog9.jpg"
 import blog10 from "../../assets/blog/blog10.jpg"
+import teamWork from "../../assets/team-work.png"
 
 const BlogMain = () => {
     return (
         <div className="py-14">
-            {/* collaborate section */}
-            <div className="flex gap-10 bg-yellow-200 items-center px-10">
-                <div className="w-1/2">
-                    <h3 className="text-3xl font-black text-gray-950 pb-4">Collaborate From Anywhere</h3>
-                    <p className="text-base text-gray-900">Put an end to organizational silos, chaotic data operations and disjointed audience experiences. With ON24, your go-to-market teams can use one platform for digital engagement and get a clear understanding of your audience.</p>
-                </div>
-                <div className="w-1/2">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lxvKgxw-P-4?si=n11zbzxEqxrWdUAr" allowfullscreen></iframe>
-                </div>
-            </div>
+
+
             {/* blog cards */}
-            <div className="px-10 pt-14 pb-10">
-                <h2 className="text-4xl font-bold text-center pb-14">Our Blog</h2>
-                <div className="grid grid-cols-3 gap-6">
+            <div className="px-10 pt-0 lg:pt-14 pb-10">
+                <h2 className="text-4xl font-bold text-center pb-14">Welcome to Our Blog</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div className="card shadow-xl border-r border-b border-yellow-400">
                         <figure><img className="h-52 w-full" src={blog} alt="Lead Generation" /></figure>
                         <div className="card-body">
@@ -115,6 +108,23 @@ const BlogMain = () => {
                                 <button className="text-yellow-400">Read More</button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            {/* image section */}
+            <div className="pt-10 lg:pt-24 pb-14">
+                <h2 className="text-3xl md:text-4xl font-bold text-center pb-5 px-12 lg:px-0">Team Work Events</h2>
+                <hr className="w-32 mx-auto h-[2px] bg-yellow-600 mb-20" />
+                <div className="lg:flex bg-yellow-200 items-center flex-row-reverse">
+                    <div className="lg:w-1/2 px-10 py-6 lg:py-0 md:px-20 lg:px-0">
+                        <h3 className="text-3xl font-black text-gray-950 pb-4 md:px-10">The tools you need. A team you can count on.</h3>
+                        <p className="text-base text-gray-900 md:px-10">Create superior candidate experiences with virtual hiring event solutions offering customized schedules, optional prerequisite filters, and unlimited bandwidth for one-on-one or group video meetings.</p>
+                    </div>
+                    <div className="lg:w-1/2 bg-white">
+                        <img src={teamWork} alt="" />
                     </div>
                 </div>
             </div>

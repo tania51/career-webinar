@@ -10,9 +10,9 @@ import webinar9 from "../../assets/webinars/webinar9.jpg"
 
 const GalleryMain = () => {
     return (
-        <div className="py-20 px-10">
-            <h2 className="text-4xl font-bold text-center pb-14">Our Seminers, Conferences and Webinars</h2>
-            <div className="grid grid-cols-3 gap-6">
+        <div className="py-10 lg:py-20 px-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-center pb-14">Our Seminers, Conferences and Webinars</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="avatar">
                     <div className="rounded-xl">
                         <img src={webinar} />

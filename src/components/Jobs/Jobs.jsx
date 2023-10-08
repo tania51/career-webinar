@@ -13,8 +13,8 @@ const Jobs = () => {
 
 
     return (
-        <div className="px-10 my-20">
-            <h2 className="text-3xl text-center mb-3">Latest Jobs</h2>
+        <div className="px-4 md:px-10 my-20">
+            <h2 className="text-3xl text-center mb-3">Latest Services</h2>
             <hr className="w-20 mx-auto h-[2px] bg-yellow-600 mb-10" />
             <div className="grid md:grid-cols-2 gap-10">
                 {

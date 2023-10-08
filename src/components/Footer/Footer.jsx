@@ -1,21 +1,22 @@
+import { Link } from "react-router-dom";
 
 
 const Footer = () => {
     return (
-            <footer className="footer p-10 bg-black text-base-content">
+            <footer className="footer p-10 bg-black text-base-content grid grid-cols-3">
                 <nav>
                     <header className="footer-title">Services</header>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <Link className="link link-hover" to="/job-details/1">Web Development</Link>
+                    <Link className="link link-hover" to="/job-details/2">SEO</Link>
+                    <Link className="link link-hover" to="/job-details/3">Social Marketing</Link>
+                    <Link className="link link-hover" to="/job-details/6">CMS</Link>
                 </nav>
                 <nav>
                     <header className="footer-title">Company</header>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <Link className="link link-hover" to="/">Home</Link>
+                    <Link className="link link-hover" to="/gallery">Gallery</Link>
+                    <Link className="link link-hover" to="/blog">Blog</Link>
+                    <Link className="link link-hover" to="/contact">Contact</Link>
                 </nav>
                 <nav>
                     <header className="footer-title">Social</header>
