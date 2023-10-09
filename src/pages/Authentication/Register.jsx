@@ -4,6 +4,8 @@ import { FcGoogle } from "react-icons/fc";
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { updateProfile } from "firebase/auth";
+import auth from "../../Firebase/Firebase";
 
 
 const Register = () => {
@@ -35,7 +37,7 @@ const Register = () => {
         const photo = form.get('photo');
         const email = form.get('email');
         const password = form.get('password');
-        console.log(name, photo, email, password);
+        // console.log(name, photo, email, password);
 
         if (!/^(?=\S*[a-z])(?=\S*[A-Z])(?=\S*\d)(?=\S*[^\w\s])\S{8,}$/.test(password)) {
             Swal.fire({
@@ -57,8 +59,15 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
-
+                
                 console.log(result.user)
+                updateProfile(auth.currentUser, {
+                    displayName: name, photoURL: photo
+                })
+                .then(() => {
+                    console.log('profile name and photo url updated');
+                })
+                .catch(err => console.log(err.message))
             })
             .catch(error => {
                 console.log(error);

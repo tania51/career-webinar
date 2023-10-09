@@ -6,14 +6,21 @@ import { AuthContext } from "../../Provider/AuthProvider/AuthProvider";
 
 
 const Navbar = () => {
-    const {user, logOut} = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
+    console.log(user);
+
+
+
+
+
+
 
     const handelLogOut = () => {
         logOut()
-        .then(result => console.log(result.user))
-        .catch(err => console.error(err))
+            .then(result => console.log(result.user))
+            .catch(err => console.error(err))
     }
-    
+
     const navLinks = <div className="text-xl space-x-8">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/gallery">Gallery</NavLink>
@@ -44,13 +51,18 @@ const Navbar = () => {
                     {
                         user ? <div className="flex gap-2 items-center">
                             <span>{user?.displayName}</span>
-                            <img className="h-9 rounded-full border-none" src={user?.photoURL} alt="" />
+                            <div className="avatar">
+                                <div className="w-12 rounded-full">
+                                    <img src={user?.photoURL} />
+                                </div>
+                            </div>
+                            {/* <img className="h-9 rounded-full border-none" src={user?.photoURL} alt="" /> */}
                             <button onClick={handelLogOut} className="bg-[#fffb05] text-lg text-black px-4 py-1 rounded">Log Out</button>
                         </div>
-                        :
-                        <Link to="/login"><button className="bg-[#fffb05] text-lg text-black px-4 py-1 rounded border-r-2 border-b-2 border-gray-950">Login</button></Link>
+                            :
+                            <Link to="/login"><button className="bg-[#fffb05] text-lg text-black px-4 py-1 rounded border-r-2 border-b-2 border-gray-950">Login</button></Link>
                     }
-                    
+
                 </div>
             </div>
         </div>
