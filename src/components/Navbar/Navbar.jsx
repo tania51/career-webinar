@@ -52,12 +52,12 @@ const Navbar = () => {
                         user ? <div className="flex gap-2 items-center">
                             <span>{user?.displayName}</span>
                             <div className="avatar">
-                                <div className="w-12 rounded-full">
+                                <div className="w-8 md:w-12 rounded-full">
                                     <img src={user?.photoURL} />
                                 </div>
                             </div>
                             {/* <img className="h-9 rounded-full border-none" src={user?.photoURL} alt="" /> */}
-                            <button onClick={handelLogOut} className="bg-[#fffb05] text-lg text-black px-4 py-1 rounded">Log Out</button>
+                            <button onClick={handelLogOut} className="bg-[#fffb05] text-sm md:text-lg text-black px-2 md:px-4 py-1 rounded">Log Out</button>
                         </div>
                             :
                             <Link to="/login"><button className="bg-[#fffb05] text-lg text-black px-4 py-1 rounded border-r-2 border-b-2 border-gray-950">Login</button></Link>
