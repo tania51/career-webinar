@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { useContext } from "react";
@@ -10,6 +10,8 @@ import auth from "../../Firebase/Firebase";
 
 const Register = () => {
     const { signInWithGoogle, createUser } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const googleSignInHandeler = () => {
         signInWithGoogle()
@@ -59,11 +61,12 @@ const Register = () => {
 
         createUser(email, password)
             .then(result => {
-                
+                navigate(location?.state ? location.state : '/')
                 console.log(result.user)
                 updateProfile(auth.currentUser, {
                     displayName: name, photoURL: photo
                 })
+                
                 .then(() => {
                     console.log('profile name and photo url updated');
                 })
